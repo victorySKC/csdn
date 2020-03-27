@@ -1,4 +1,4 @@
-package com.debug.steadyjack.response;
+package com.debug.steadyjack.enums;
 
 /**
  * Created by steadyjack on 2018/9/6.
@@ -6,7 +6,8 @@ package com.debug.steadyjack.response;
 public enum StatusCode {
 
     Success(0,"成功"),
-    Fail(-1,"失败");
+    Fail(-1,"失败"),
+    Entity_Not_Exist(110,"实体信息不存在");
 
     private Integer code;
     private String msg;

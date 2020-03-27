@@ -3,7 +3,6 @@ package com.debug.steadyjack.entity;
 import java.util.Date;
 
 public class OrderRecord {
-    private Integer id;
 
     private String orderNo;
 
@@ -20,6 +19,8 @@ public class OrderRecord {
     public void setId(Integer id) {
         this.id = id;
     }
+
+    private Integer id;
 
     public String getOrderNo() {
         return orderNo;

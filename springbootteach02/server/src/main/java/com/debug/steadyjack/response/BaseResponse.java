@@ -1,9 +1,18 @@
 package com.debug.steadyjack.response;
 
+import com.debug.steadyjack.entity.OrderRecord;
+import com.debug.steadyjack.enums.StatusCode;
+
 /**
- * Created by steadyjack on 2018/9/6.
+ *
+ * @author sikuncheng
+ * @description 通用响应模型
+ * @name BaseResponse
+ * @date 2020/3/26 23:37
+ * @param
+ * @return
  */
-public class BaseResponse<T> {
+public class BaseResponse<T> extends OrderRecord {
 
     private Integer code;
     private String msg;

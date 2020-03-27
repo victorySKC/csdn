@@ -2,6 +2,8 @@ package com.debug.steadyjack.mapper;
 
 import com.debug.steadyjack.entity.OrderRecord;
 
+import java.util.List;
+
 public interface OrderRecordMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +16,6 @@ public interface OrderRecordMapper {
     int updateByPrimaryKeySelective(OrderRecord record);
 
     int updateByPrimaryKey(OrderRecord record);
+
+    List<OrderRecord> selectAll();
 }

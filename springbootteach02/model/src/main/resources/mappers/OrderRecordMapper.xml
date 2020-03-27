@@ -91,4 +91,10 @@
       update_time = #{updateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <!--查询所有数据-->
+  <select id="selectAll" resultType="com.debug.steadyjack.entity.OrderRecord">
+    SELECT <include refid="Base_Column_List"/>
+    FROM order_record
+  </select>
 </mapper>
